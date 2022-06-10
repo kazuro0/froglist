@@ -1,0 +1,329 @@
+body {
+	background: url('../img/bgm.jpg') repeat;
+	background-size: 32%;
+}
+
+* {
+	box-sizing: border-box;
+	padding: 0px;
+	margin: 0px;
+	font-family: 'Montserrat', sans-serif;
+
+}
+
+/*шапка*/
+.section, .header {
+	min-width: 900px;
+}
+
+.section {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.hat {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 72px;
+	background: #000;
+	background-size: 100%;
+}
+
+h1 {
+	width: 264px;
+	padding-top: 5px;
+	margin: auto;
+
+	text-align: center;
+	font-weight: 500;
+	font-size: 48px;
+	line-height: 59px;
+
+	color: #fff;
+}
+
+p {
+	margin-top: 2%;
+}
+
+
+.o-menu {
+	width: 43px;
+    height: 33px;
+    position: fixed;
+    right: 31px;
+    padding-top: 19px;
+	display: none;
+
+    background: none;
+    border: none;
+}
+.userh {
+	display: flex;
+	flex-direction: column;
+	margin-left: 54px;
+	
+}
+
+.username {
+	position: absolute;
+	margin-top: 14px;
+	margin-left: auto;
+	margin-right: auto;
+	color: #fff;
+	display: flex;
+	/* align-items: center;
+	justify-content: center; */
+}
+
+.exit {
+	position: absolute;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 29px;
+
+	text-decoration: none;
+	color: #000;
+	margin-top: 35px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100px;
+	height: 30px;
+
+	background: #A2FF82;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 64px;
+	border: 0px;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/*меню-бургер*/
+.menu {					/*всплывающее меню*/
+	position: fixed;
+	width: 350px;
+	height: auto;
+
+	display: block;
+	list-style-type: none;
+
+	background: #313131;
+	background-size: 100%;
+	margin-left: 20px;
+	padding-bottom: 100vh;
+	top: 72px;
+	right: 0;
+}
+
+.menu li {
+	padding: 15px;
+}
+
+.menu a {
+	display: block;
+	color: #fff;
+	text-decoration: none;
+	font-size: 32px;
+	line-height: 40px;
+}
+
+.menu li:hover {
+	background: #5F5F5F;
+}
+
+.home {
+	max-width: 264px;
+}
+
+/*основная часть сайта*/
+.section {
+	display: flex;
+}
+
+.image {
+	margin-right: 350px;
+	width: 750px;
+	margin-top: 8%;
+}
+
+.image img {
+	border: solid;
+	border-radius: 9px;
+}
+
+.info {
+	font-weight: 300;
+	font-size: 24px;
+	line-height: 39px;
+	color: #000;
+
+	width: 750px;
+	margin-top: 4%;
+	margin-right: 350px;
+	margin-bottom: 4%;
+	padding: 2%;
+
+	background: #fff;
+	border-radius: 9px;
+}
+
+.comfield {
+	font-weight: 300;
+	font-size: 24px;
+	line-height: 39px;
+	color: #000;
+
+	width: 750px;
+	margin-top: 4%;
+	margin-right: 350px;
+	margin-bottom: 4%;
+	padding: 2%;
+
+	background: #fff;
+	border-radius: 9px;
+
+	display: flex;
+	flex-direction: column;
+}
+
+.komentarii {
+	font-weight: 500;
+
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 8px;
+}
+
+.nickname {
+	margin-top: 20px;
+	font-size: 20px;
+	font-weight: 500;
+}
+
+.coms {
+	line-height: 20px;
+	margin-top: -5px;
+	margin-left: 5px;
+	font-size: 18px;
+}
+
+.comfield form textarea{
+	background: rgb(244, 244, 244);
+	margin-top: 4%;
+	resize: none;
+	height: 100px;
+	width: 685px;
+	padding: 10px;
+	box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 13px;
+	border: 0px;
+}
+
+.span {
+	display: flex;
+	height: 10px;
+	font-weight: 300;
+	font-size: 12px;
+
+	color: rgb(255, 0, 0);
+	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.button {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 29px;
+
+	text-decoration: none;
+	color: #000;
+	margin-top: 26px;
+	width: 120px;
+	height: 40px;
+
+	background: #f7ff82;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 64px;
+	border: 0px;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.pg {
+	display: none;
+}
+
+.header .s-menu {
+	display: block;
+}
+
+/*адаптив*/
+@media screen and (max-width: 1300px) {
+	body {
+		background-size: 60%;
+	}
+
+	.section, .header {
+		width: 100;
+	}
+	.image {
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	.info, .comfield {
+		margin-right: auto;
+		margin-left: auto;
+		max-width: 828px;
+	}
+	.menu {
+		display: none;
+	}
+
+	.o-menu {
+		display: block;
+	}
+}
+
+@media screen and (max-width: 950px) {
+	.image {
+		margin-top: 12%;
+	}
+	.menu li a{
+		padding: 15px;
+		font-size: 40px;
+	}
+
+	.hat {
+		height: 100px;
+	}
+	.menu {
+		top: 100px;
+	}
+
+	h1 {
+		padding-top: 20px;
+	}
+	.o-menu {
+		padding-top: 30px;
+	} 
+	.exit {
+		margin-top: 50px;
+		height: 40px;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	h2 {
+		font-size: 42px;
+	}
+	p {
+		font-size: 32px;
+	}
+}
